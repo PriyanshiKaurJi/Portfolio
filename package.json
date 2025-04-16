@@ -1,0 +1,23 @@
+{
+  "name": "priyanshi-kaur-profile",
+  "version": "1.1.0",
+  "description": "A personal animated portfolio site for Priyanshi Kaur with sound and typing effects.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Priyanshi Kaur",
+  "license": "MIT",
+  "dependencies": {
+    "howler": "^2.2.3",
+    "typeit": "^8.7.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "portfolio",
+    "animation",
+    "sound",
+    "particles",
+    "typing"
+  ]
+}
