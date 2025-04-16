@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.profile {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #00ffcc;
+  object-fit: cover;
+  box-shadow: 0 0 30px #00ffcc;
+}
+
+.profile h1 {
+  font-size: 36px;
+  margin-top: 15px;
+}
+
+.glow-text {
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  width: 290px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+.info-box:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.6);
+}
+
+.info-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.info-box p {
+  font-size: 16px;
+}
+
+.social {
+  text-align: center;
+  padding: 40px;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 20px;
+  transition: 0.3s ease;
+}
+
+.social a:hover {
+  color: #00ffcc;
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    width: 90%;
+  }
+}
