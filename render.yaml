@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: priyanshi-profile
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+    ports:
+      - 8080
